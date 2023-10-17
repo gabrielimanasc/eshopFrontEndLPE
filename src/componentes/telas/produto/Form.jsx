@@ -31,20 +31,17 @@ function Form() {
                 requerido={true} readonly={false}
                 textovalido="Descrição OK" textoinvalido="Informe a descrição"
                 maximocaracteres={40} />
+            <CampoEntrada id="txtTamanho" label="Tamanho" tipo="text"
+                name="tamanho" value={objeto.Tamanho}
+                handlechange={handleChange}
+                requerido={true} readonly={false}
+                textovalido="Tamanho OK" textoinvalido="Informe o Tamanho"
+                maximocaracteres={2} />
             <CampoEntrada id="txtEstoque" label="Estoque" tipo="number"
                 name="quantidade_estoque" value={objeto.quantidade_estoque}
                 handlechange={handleChange}
                 requerido={true} readonly={false}
                 textovalido="Estoque OK" textoinvalido="Informe estoque" />
-            <CampoSelect id="txtAtivo" label="Ativo"
-                name="ativo" value={objeto.ativo}
-                handlechange={handleChange}
-                requerido={true}
-                textovalido="Ativo OK"
-                textoinvalido="Informe se o produto está ativo">
-                <option value={true}>SIM</option>
-                <option value={false}>NÃO</option>
-            </CampoSelect>
             <CampoEntrada id="txtValor" label="Valor" tipo="number"
                 name="valor" value={objeto.valor}
                 handlechange={handleChange}
