@@ -31,9 +31,9 @@ function Produto() {
             codigo: 0,
             nome: "",
             descricao: "",
+            tamanho: "",
             quantidade_estoque: "",
             valor: "",
-            ativo: "",
             data_cadastro: new Date().toISOString().slice(0, 10),
             categoria: ""
         });
