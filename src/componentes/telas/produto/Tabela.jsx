@@ -26,8 +26,8 @@ function Tabela() {
                             <th scope="col">Código</th>
                             <th scope="col">Nome</th>
                             <th scope="col">Descrição</th>
+                            <th scope="col">Tamanho</th>
                             <th scope="col">Estoque</th>
-                            <th scope="col">Ativo</th>
                             <th scope="col">Valor</th>
                             <th scope="col">Data Cadastro</th>
                             <th scope="col">Categoria</th>
@@ -50,8 +50,8 @@ function Tabela() {
                                 <td>{objeto.codigo}</td>
                                 <td>{objeto.nome}</td>
                                 <td>{objeto.descricao}</td>
+                                <td>{objeto.tamanho}</td>
                                 <td>{objeto.quantidade_estoque}</td>
-                                <td>{objeto.ativo ? 'SIM' : 'NÃO'}</td>
                                 <td>{formataMoeda(objeto.valor)}</td>
                                 <td>{objeto.data_cadastro}</td>
                                 <td>{objeto.categoria_nome}</td>
